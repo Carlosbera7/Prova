@@ -7,13 +7,13 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('niveis', '0002_validacao'),
+        ('niveis', '0002_auto_20141125_1940'),
     ]
 
     operations = [
-        migrations.RenameField(
+        migrations.AlterField(
             model_name='validacao',
-            old_name='Local',
-            new_name='Descricao',
+            name='Entrada',
+            field=models.TimeField(auto_now=True, null=True),
         ),
     ]

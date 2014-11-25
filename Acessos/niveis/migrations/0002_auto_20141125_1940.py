@@ -7,12 +7,12 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('niveis', '0004_auto_20141124_2033'),
+        ('niveis', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterUniqueTogether(
             name='validacao',
-            unique_together=set([('Nome', 'Descricao')]),
+            unique_together=None,
         ),
     ]
